@@ -2,8 +2,16 @@
 
 // window.onload = function() {
 
-        const nombre = prompt("Cómo te llamas?")
-        alert("Hola " + nombre + "! Bienvenido a mi portfolio!")
+        let nombre = sessionStorage.getItem("nombreUsuario");
+
+        if (!nombre) {
+            nombre = prompt("¿Cómo te llamas?");
+            sessionStorage.setItem("nombreUsuario", nombre);
+        }
+
+        alert("¡Hola " + nombre + "! Bienvenido a mi portfolio!");
+
+
 
 
         // Array de frases
