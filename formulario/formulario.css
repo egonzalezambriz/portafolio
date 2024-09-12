@@ -1,0 +1,220 @@
+
+/* Reseteo de margenes y padding a toda la página y establecimiento del font */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Mono", monospace;
+}
+
+/* Para quitar el punto de las listas y que el menu quede limpio */
+ol, ul {
+    list-style: none;
+}
+
+/* Para que el menu quede limpio */
+a {
+    text-decoration: none;
+}
+
+header, footer {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 0.25px, 1px, 0.25px, 0.5px;
+    justify-content: space-around;
+}
+
+header a i {
+    color: white;
+    font-size: 22px;
+    padding: 0.5em;
+}
+
+header nav ul, footer nav ul {
+    color: white;
+    display: flex;
+    gap: 1.5em;
+}
+
+header nav ul li a {
+    color: white;
+}
+
+nav {
+    font-size: 18px;  
+    justify-content: flex;
+}
+
+.spacer {
+    height: 100px;
+ }
+
+.titulo_seccion {
+    position: relative;
+    font-size: 40px;
+    color: rgb(197, 6, 6);
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;  /* Define el ancho máximo del contenedor */
+    margin: 0 auto;     /* Centra el contenedor horizontalmente */
+    padding: 5px;       /* Agrega un poco de espacio alrededor del formulario */
+    border: 5px;        /* Agrega un borde al contenedor */
+    border-radius: 5%;  /* Agrega bordes redondeados al contenedor */
+    font-weight: bold;  /* Texto en negritas */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Espacio entre cada input */
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 1000px;   /* Define el ancho máximo del input */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5%;
+    height: 40px;
+    font-size: 16px; 
+}
+
+textarea {
+    resize: vertical; /* Permite redimensionar verticalmente el textarea */
+}
+
+.container {
+    max-width: 1200px;  /* Define el ancho máximo del contenedor */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Espacio entre cada input */
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 1000px;   /* Define el ancho máximo del input */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5%;
+    height: 40px;
+    font-size: 16px; 
+}
+
+
+#btn-enviar {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold; /* Texto en negritas */
+    width: 150px;
+    height: 50px;
+    border-radius: 5%;
+    cursor: pointer;
+  }
+  
+#btn-enviar:hover {
+    background-color: #45a049;
+}
+  
+#btn-enviar:hover {
+    background-color: #0056b3;
+}
+    
+
+
+
+
+
+
+
+
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    header, footer {
+        background-color: burlywood;
+    }
+
+    header a i {
+        font-size: 18px;
+    }
+
+    nav {
+        font-size: 14px;  
+    }
+    
+    h2  {
+        font-size: 28px;
+    }
+
+    .spacer {
+        height: 70px;
+    }
+
+   
+    #encabezado ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        text-align: center;
+
+        top: 80px;
+        left: 100%;
+        transition: all 0.5s
+    }
+
+
+    #encabezado nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    #encabezado nav ul li a {
+        font-size: 20px;
+    }
+
+    .seccion_8 {
+        font-size: 16px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .container {
+        max-width: 500px;  /* Define el ancho máximo del contenedor */
+    }
+
+    input[type="text"], input[type="email"], textarea {
+        width: 500px;   /* Define el ancho máximo del input */
+        height: 15px;
+        font-size: 12px; 
+    }
+}
+
+
+
+ /* Estilos para pantallas medianas */
+ @media screen and (min-width: 769px) and (max-width: 1023px) {
+   
+    .container {
+        max-width: 850px;  /* Define el ancho máximo del contenedor */
+    }
+
+    input[type="text"], input[type="email"], textarea {
+        width: 600px;   /* Define el ancho máximo del input */
+        height: 20px;
+        font-size: 10px; 
+    }
+ }
+
+
+
+
+

@@ -1,0 +1,264 @@
+
+/* Reseteo de margenes y padding a toda la página y establecimiento del font */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Mono", monospace;
+}
+
+/* Para quitar el punto de las listas y que el menu quede limpio */
+ol, ul {
+    list-style: none;
+}
+
+/* Para que el menu quede limpio */
+a {
+    text-decoration: none;
+}
+
+header, footer {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 0.25px, 1px, 0.25px, 0.5px;
+    justify-content: space-around;
+}
+
+header a i {
+    color: white;
+    font-size: 22px;
+    padding: 0.5em;
+}
+
+header nav ul, footer nav ul {
+    color: white;
+    display: flex;
+    gap: 1.5em;
+}
+
+header nav ul li a {
+    color: white;
+}
+
+nav {
+    font-size: 18px;  
+    justify-content: flex;
+}
+
+h2, #link-detalle-servicios, #link-detalle-conocimientos, #link-detalle-cursos  {
+    font-size: 32px;
+    color: red;
+}
+
+#seccion-principal{
+    background-color: white;    
+    padding: 2px;
+    font-size: 20px;
+}
+
+.acerca-imagen {
+    padding: 2px;
+    font-size: 14px;
+}
+
+.seccion_1, .seccion_2, .seccion_3, .seccion_4, .seccion_5, .seccion_6, .seccion_7, .seccion_8, .seccion_9 {
+    padding: 2px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.transparente-opacidad {
+    opacity: 0.5;
+}
+
+.transparente-opacidad-img {
+    opacity: 0.60;
+}
+
+.spacer {
+    height: 100px;
+ }
+
+#check {
+    display: none;
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Clases para imágenes */
+.img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Esto elimina los espacios en blanco bajo las imágenes en contenedores en línea */
+    border-radius: 25px; /* Mantiene el borde redondeado */
+}
+
+.brillo-contraste {
+    filter: brightness(6); /* Aumenta el brillo en un 100% */
+    filter: contrast(0.75)
+}
+
+
+/* Estilo específico para la imagen de la sección con el id "presa-resize-img" */
+#presa-resize-img {
+    max-width: 1515px;
+    max-height: 500px; /* Limita la altura máxima de la imagen */
+    width: 100%;
+    height: auto;
+}
+
+
+.limit-height-img {
+    height: 375px;
+}
+
+
+#btn-generar {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold; /* Texto en negritas */
+    width: 250px;
+    height: 50px;
+    border-radius: 5%;
+    cursor: pointer;
+  }
+  
+#btn-generar:hover {
+    background-color: #45a049;
+}
+  
+#btn-generar:hover {
+    background-color: #0056b3;
+}
+    
+
+
+
+
+
+
+
+
+
+
+/* Estilos para pantallas grandes (mínimo 1024px) */
+@media (min-width: 1024px) {
+    /* Estilo específico para la imagen "img/Foto EAGA LinkedIn.jpeg" en pantallas grandes */
+    #acerca-de-mi .img {
+        max-width: 150%; /* Ajusta este valor según el tamaño deseado */
+        height: auto;
+    }
+}
+
+
+ /* Estilos para pantallas medianas */
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+   
+   /* Estilo específico para la imagen "img/Foto EAGA LinkedIn.jpeg" en pantallas medianas */
+   #acerca-de-mi .img {
+    max-width: 125%; /* Ajusta este valor según el tamaño deseado */
+    height: auto;
+    }
+}
+
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    header, footer {
+        background-color: burlywood;
+    }
+
+    header a i {
+        font-size: 18px;
+    }
+
+    nav {
+        font-size: 14px;  
+    }
+    
+    h2, #link-detalle-servicios, #link-detalle-conocimientos, #link-detalle-cursos  {
+        font-size: 28px;
+    }
+  
+    #seccion-principal{
+        font-size: 16px;
+    }
+    
+    .seccion_1, .seccion_2, .seccion_3, .seccion_4, .seccion_5, .seccion_6, .seccion_7, .seccion_8, .seccion_9 {
+        font-size: 16px;
+    }
+
+    .spacer {
+        height: 70px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .seccion_1, .seccion_2, .seccion_3, .seccion_4, .seccion_5, .seccion_6, .seccion_7, .seccion_8, .seccion_9 {
+        font-size: 16px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    #presa-resize-img {
+        width: 100%;
+        max-height: 300px; /* Limita la altura máxima en pantallas pequeñas */
+        height: auto;
+    }
+
+    #encabezado ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;              /* view por heigth para ocupe tola alaltura de la pantalla */
+        background: rgb(51, 51, 101);
+        text-align: center;
+
+        top: 80px;                  /* para el ancho de la barra del menu */
+        left: 100%;
+        transition: all 0.5s
+    }
+
+    /* cambio realizado hoy jueves 5 sept 2024  */
+    #check {
+        display: none;
+        background-color: white;   /* Para hacer visible al check */
+    }
+    
+    .checkbtn {
+        display: block;
+    }
+    
+    #check:checked ~ ul {
+        left: 0;
+        display: block;
+    }
+    
+    #encabezado nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    #encabezado nav ul li a {
+        font-size: 20px;
+    }
+
+    #check:checked ~ .checkbtn {
+        color: #2c3e50;
+    } 
+
+}
