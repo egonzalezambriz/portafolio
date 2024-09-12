@@ -2,19 +2,36 @@
 
 // window.onload = function() {
 
+       // Verifica si el nombre ya está almacenado en sessionStorage
         let nombre = sessionStorage.getItem("nombreUsuario");
 
         if (!nombre) {
+            // Si no hay nombre almacenado, solicita el nombre al usuario
             nombre = prompt("¿Cómo te llamas?");
-            sessionStorage.setItem("nombreUsuario", nombre);
+            
+            if (nombre) { // Asegúrate de que el usuario haya ingresado algo
+                sessionStorage.setItem("nombreUsuario", nombre);
+                sessionStorage.setItem("saludoMostrado", "false"); // Marca que el saludo aún no ha sido mostrado
+            }
         }
 
-        alert("¡Hola " + nombre + "! Bienvenido a mi portfolio!");
+        // Verifica si el saludo ya fue mostrado
+        let saludoMostrado = sessionStorage.getItem("saludoMostrado");
+
+        if (nombre && saludoMostrado === "false") {
+            // Muestra el saludo una única vez
+            alert("¡Hola " + nombre + "! Bienvenido a mi portfolio!");
+            
+            // Marca el saludo como mostrado para evitar que se repita
+            sessionStorage.setItem("saludoMostrado", "true");
+        }
+
+        
 
 
 
 
-        // Array de frases
+        // Array de frases para presentar en el footer
         const frases = [
             "La vida es lo que pasa mientras estás ocupado haciendo otros planes.",
             "El único modo de hacer un gran trabajo es amar lo que haces.",
