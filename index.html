@@ -25,19 +25,19 @@
                 </label>  
 
                 <ul class="menu">
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#acerca-de-mi">Acerca de mi</a></li>
-                    <li><a href="#experiencia-profesional">Experiencia Profesional</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#servicios">Conocimientos</a></li>
-                    <li><a href="#preparacion-academica">Preparación Académica</a></li>
-                    <li><a href="#cursos">Cursos</a></li>
-                    <li><a href="formulario/formulario.html">Contacto</a></li>
+                    <li><a href="#inicio" onclick="document.getElementById('check').checked = false">Inicio</a></li>
+                    <li><a href="#acerca-de-mi" onclick="document.getElementById('check').checked = false">Acerca de mi</a></li>
+                    <li><a href="#experiencia-profesional" onclick="document.getElementById('check').checked = false">Experiencia Profesional</a></li>
+                    <li><a href="servicios.html#servicios" onclick="document.getElementById('check').checked = false">Servicios</a></li>
+                    <li><a href="conocimientos.html#conocimientos" onclick="document.getElementById('check').checked = false">Conocimientos</a></li>
+                    <li><a href="#preparacion-academica" onclick="document.getElementById('check').checked = false">Preparación Académica</a></li>
+                    <li><a href="cursos.html#cursos" onclick="document.getElementById('check').checked = false">Cursos</a></li>
+                    <li><a href="formulario/formulario.html" onclick="document.getElementById('check').checked = false">Contacto</a></li>
                     <!--<li><a href="#contacto">Contacto</a></li>-->
                 </ul>   
             </nav>        
         </header> 
-            
+       
 
         <main id="seccion-principal">
             
@@ -240,6 +240,6 @@
         </footer>
       
     </div>        
-    <script src="index.js"></script>
+    <script src="index.js?ts=<?=time()?>"></script>
 </body>
 </html>

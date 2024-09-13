@@ -149,9 +149,6 @@ h2, #link-detalle-servicios, #link-detalle-conocimientos, #link-detalle-cursos  
 
 
 
-
-
-
 /* Estilos para pantallas grandes (mínimo 1024px) */
 @media (min-width: 1024px) {
     /* Estilo específico para la imagen "img/Foto EAGA LinkedIn.jpeg" en pantallas grandes */
@@ -160,6 +157,9 @@ h2, #link-detalle-servicios, #link-detalle-conocimientos, #link-detalle-cursos  
         height: auto;
     }
 }
+
+
+
 
 
  /* Estilos para pantallas medianas */
@@ -171,6 +171,7 @@ h2, #link-detalle-servicios, #link-detalle-conocimientos, #link-detalle-cursos  
     height: auto;
     }
 }
+
 
 
 /* Estilos para pantallas más pequeñas (hasta 768px) */
@@ -229,7 +230,8 @@ h2, #link-detalle-servicios, #link-detalle-conocimientos, #link-detalle-cursos  
 
         top: 80px;                  /* para el ancho de la barra del menu */
         left: 100%;
-        transition: all 0.5s
+        transition: all 0.5s;
+        z-index: 100;               /* para que cuando el dispositivo sea un movil no haya superposicion con el menu de hamburguesa */
     }
 
     /* cambio realizado hoy jueves 5 sept 2024  */
